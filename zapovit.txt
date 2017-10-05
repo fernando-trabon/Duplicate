@@ -16,5 +16,6 @@ qwerty
 Remember also me.
 
 5.T.G.Shevchenko "Zapovit"
+diff
 	
 
