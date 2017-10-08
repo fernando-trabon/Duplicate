@@ -10,6 +10,8 @@ public class App {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 	
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
 		Person	p1 = new Person("Vasya", 1990);
 		
 		Person p2 = new Person();
@@ -24,7 +26,7 @@ public class App {
 		p5.input();
 		
 		System.out.println("Enter current year");
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
 		Person.setThisYear(Integer.parseInt(br.readLine()));
 		
 		System.out.println("----------------------------------------");

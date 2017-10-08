@@ -10,6 +10,12 @@ public class Person {
 	private int birthYear;
 	private static int thisYear;
 	
+	
+	public String read() throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		return br.readLine();
+	}
+	
 	public static void setThisYear(int ty) {
 		Person.thisYear = ty;
 	}
@@ -46,12 +52,10 @@ public class Person {
 	}
 	
 	public void input() throws NumberFormatException, IOException {
-		BufferedReader sc1 = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("Input Name:");
-		String Nname = sc1.readLine();
-		this.setName(Nname);
+		this.setName(this.read());
 		System.out.println("Input birthday year:");
-		int NbirthYear = Integer.parseInt(sc1.readLine());
+		int NbirthYear = Integer.parseInt(this.read());
 		this.setBirthYear(NbirthYear);
 	}
 	
@@ -63,11 +67,9 @@ public class Person {
 	}
 	
 	public void changeName() throws IOException {
-		BufferedReader sc = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("Current name:"+this.getName());
 		System.out.println("Input new name:");
-		String Nname = sc.readLine();
-		this.setName(Nname);
+		this.setName(this.read());
 		System.out.println("Name changed to:"+this.getName());
 		
 	}
