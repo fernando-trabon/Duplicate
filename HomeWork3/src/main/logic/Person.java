@@ -8,6 +8,15 @@ public class Person {
 	
 	private String name;
 	private int birthYear;
+	private static int thisYear;
+	
+	public static void setThisYear(int ty) {
+		Person.thisYear = ty;
+	}
+
+	public static int getThisYear() {
+		return thisYear;
+	}
 	
 	public String getName() {
 		return name;
@@ -33,7 +42,7 @@ public class Person {
 	public Person() {}
 	
 	public int age() {
-		return 2017-this.getBirthYear();
+		return getThisYear()-this.getBirthYear();
 	}
 	
 	public void input() throws NumberFormatException, IOException {

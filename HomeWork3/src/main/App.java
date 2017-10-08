@@ -1,6 +1,8 @@
 package main;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 import main.logic.Person;
 
@@ -20,6 +22,10 @@ public class App {
 		
 		Person p5 = new Person();
 		p5.input();
+		
+		System.out.println("Enter current year");
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		Person.setThisYear(Integer.parseInt(br.readLine()));
 		
 		System.out.println("----------------------------------------");
 		
