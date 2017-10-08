@@ -2,15 +2,12 @@ package javaCore.homework.lesson3;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.Calendar;
 
 public class Person {
 	private String name;
 	private int birthYear;
-	
-	BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-	
+
 	// Create constructors
 
 	public Person() {
@@ -46,31 +43,30 @@ public class Person {
 		int nowYear = calendar.get(Calendar.YEAR);
 		return nowYear - this.birthYear;
 	}
-	
+
 	// Method enter all data of person
-	
-	public void input() throws IOException {
+
+	public void input(BufferedReader reader) throws IOException {
 		System.out.println("Input name of person: ");
 		this.setName(reader.readLine());
 		System.out.println("Input birthYear of person: ");
 		this.setBirthYear(Integer.parseInt(reader.readLine()));
-		
+
 	}
-	
-	
+
 	// Method give all information about person
-	
+
 	public void output() {
-		System.out.println("Person's name:      [" + this.name  + "]"  + '\n' +"Person's birthYear: [" +
-				this.birthYear + "]" + '\n' + "Person's age:       [" + this.calculateAge() + "]");
+		System.out.println("Person's name:      [" + this.name + "]" + '\n' + "Person's birthYear: [" + this.birthYear
+				+ "]" + '\n' + "Person's age:       [" + this.calculateAge() + "]");
 		System.out.println("");
-		
+
 	}
 
 	// Method change person's name
 
-	public void changeName() throws IOException {
-		System.out.println("Input person's name(rename): " );
+	public void changeName(BufferedReader reader) throws IOException {
+		System.out.println("Input person's name(rename): ");
 		this.name = reader.readLine();
 	}
 
