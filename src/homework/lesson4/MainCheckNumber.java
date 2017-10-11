@@ -1,10 +1,10 @@
-package homework.lesson4.task1;
+package homework.lesson4;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import homework.lesson4.task1.Dog.Breed;
+import homework.lesson4.Dog.Breed;
 
 public class MainCheckNumber {
 
