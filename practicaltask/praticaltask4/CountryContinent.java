@@ -11,6 +11,7 @@ public class CountryContinent {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		Continent c = Continent.Azia;
 
 		System.out.println("Please, input country name: ");
 		String countryName = reader.readLine();
@@ -22,7 +23,8 @@ public class CountryContinent {
 		case "Germany":
 		case "France":
 		case "Poland":
-			System.out.println("This country is in " + Continent.EUROPE + ".");
+				c= Continent.ASIA;
+			//System.out.println("This country is in " + Continent.EUROPE + ".");
 			break;
 		case "China":
 		case "Japan":
@@ -55,8 +57,10 @@ public class CountryContinent {
 			break;
 		default:
 			System.out.println("You inputted wrong country name!");
+				System.exit(0);
 
 		}
+		System.out.println(c);
 
 	}
 
