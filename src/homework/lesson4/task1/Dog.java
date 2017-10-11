@@ -1,4 +1,4 @@
-package javaCore.homework.lesson4.task1;
+package homework.lesson4.task1;
 
 public class Dog {
 	private String name;

@@ -1,4 +1,4 @@
-package javaCore.practicaltask.praticaltask4.task4;
+package practicaltask.praticaltask4.task4;
 
 public class AppProduct {
 

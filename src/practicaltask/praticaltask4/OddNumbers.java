@@ -1,4 +1,4 @@
-package javaCore.practicaltask.praticaltask4;
+package practicaltask.praticaltask4;
 
 import java.io.BufferedReader;
 import java.io.IOException;

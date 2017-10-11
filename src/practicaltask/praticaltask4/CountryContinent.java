@@ -1,4 +1,4 @@
-package javaCore.practicaltask.praticaltask4;
+package practicaltask.praticaltask4;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,7 +11,7 @@ public class CountryContinent {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		Continent c = Continent.Azia;
+		Continent c = Continent.ASIA;
 
 		System.out.println("Please, input country name: ");
 		String countryName = reader.readLine();
