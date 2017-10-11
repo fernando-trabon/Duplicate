@@ -24,8 +24,8 @@ public class ArrayExample {
 		System.out.println("The biggest number - " + max);
 		System.out.println("The sum of positive numbers - " + sum);
 		System.out.println("The amount negative numbers - " + amountN);
-		System.out.println((amountP > amountN)? "More positive" : "More negative or equals");
-		
+		System.out.println((amountP > amountN) ? "More positive" : "More negative or equals");
+
 	}
 
 }
