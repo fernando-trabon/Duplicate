@@ -158,13 +158,17 @@ public class Methods {
 		System.out.println("------------------------------------------");
 		
 		System.out.println("First dog");
-		Dog d1 = new Dog(sc);
+		Dog d1 = new Dog().input(sc);
+		//d1.input(sc);
 		System.out.println("Next one");
-		Dog d2 = new Dog(sc);
+		Dog d2 = new Dog().input(sc);
+		//d2.input(sc);
 		System.out.println("Next one");
-		Dog d3 = new Dog(sc);
+		Dog d3 = new Dog().input(sc);
+		//d2.input(sc);
 		
 		System.out.println("Is here two or more dogs of same breed? " + samebreed(d1, d2, d3));
+		System.out.println();
 		oldestDog(d1, d2, d3);
 		System.out.println("------------------------------------------");		
 	}
@@ -177,15 +181,15 @@ public class Methods {
 		System.out.println("Oldest one is"); 
 		if (d1.getAge() == max(d1.getAge(), d2.getAge(), d3.getAge())) {
 			  System.out.println("Name: "+d1.getName());
-			  System.out.println("Kind: "+d1.getBreed());		
+			  System.out.println("Breed: "+d1.getBreed());		
 		}else {
 			if (d2.getAge() == max(d1.getAge(), d2.getAge(), d3.getAge())) {
 				  System.out.println("Name: "+d2.getName());
-				  System.out.println("Kind: "+d2.getBreed());		
+				  System.out.println("Breed: "+d2.getBreed());		
 			}else {
 				if (d3.getAge() == max(d1.getAge(), d2.getAge(), d3.getAge())) {
 					  System.out.println("Name: "+d3.getName());
-					  System.out.println("Kind: "+d3.getBreed());		
+					  System.out.println("breed: "+d3.getBreed());		
 				}
 			}
 		}

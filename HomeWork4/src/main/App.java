@@ -11,9 +11,9 @@ public class App {
 	public static void main(String[] args) throws IOException{
 		BufferedReader sc = new BufferedReader(new InputStreamReader(System.in));
 		Methods m = new Methods();
-		m.rangeCheck(sc);
-		m.minmax(sc);
-		m.HTTP_Error(sc);
+//		m.rangeCheck(sc);
+//		m.minmax(sc);
+//		m.HTTP_Error(sc);
 		m.Dogs(sc);
 	}
 

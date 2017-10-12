@@ -43,6 +43,8 @@ public class Dog {
 		this.breed = breed;
 		this.age = age;
 	}
+	
+	public Dog() {};
 
 //	public Dog(BufferedReader sc) throws NumberFormatException, IOException {
 //		System.out.println("Enter name:");
@@ -74,7 +76,7 @@ public class Dog {
 	public Dog input(BufferedReader sc) throws IOException{
 		System.out.println("Enter name:");
 		String name = sc.readLine();
-		System.out.println("Choose breed. 1-Hound 2-Terrier 3-Spaniel");
+		System.out.println("Enter breed (Hound, Terrier, Spaniel)");
 
 		Breed breed = convert(sc.readLine());
 		
