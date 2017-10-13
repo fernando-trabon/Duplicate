@@ -57,10 +57,14 @@ public class AppEmployee {
 		sameDepNumber(reader, arrEmp);
 
 		System.out.println("Display all employees");
+		
 		displayArr(arrEmp);
+		
 		System.out.println();
 		System.out.println("Display all employees sort by salary");
+		
 		descArrayBySalary(arrEmp);
+		
 		displayArr(arrEmp);
 
 	}
