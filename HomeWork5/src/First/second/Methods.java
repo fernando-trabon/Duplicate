@@ -82,10 +82,9 @@ public class Methods {
 		if (returner == -1) {
 			System.out.println("No two positive numbers");
 			System.exit(0);
-			return ++returner;
-		}else {
-			return ++returner;
 		}
+		return ++returner;
+		
 	}
 	
 	private void minpos(int[] numbers) {
