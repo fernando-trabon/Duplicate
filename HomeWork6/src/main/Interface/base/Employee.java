@@ -1,6 +1,8 @@
 package main.Interface.base;
 
-public  class Employee {
+import main.Interface.CalculatePay;
+
+public  abstract class Employee implements CalculatePay{
 
 	private String employeed;
 	private Payment payment;

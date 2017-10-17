@@ -1,9 +1,8 @@
 package main.Interface.base.clss;
 
-import main.Interface.CalculatePay;
 import main.Interface.base.Employee;
 
-public class ContractEmployee extends Employee implements CalculatePay{
+public class ContractEmployee extends Employee {
 
 	private String federalTaxIdmember;
 	private double hourlyrate;

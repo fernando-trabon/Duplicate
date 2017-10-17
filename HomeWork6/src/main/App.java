@@ -6,7 +6,6 @@ import main.bird.birds.Kiwi;
 import main.bird.birds.Penguin;
 import main.bird.birds.Swallow;
 import main.Interface.base.Employee;
-import main.Interface.base.Employee.Payment;
 import main.Interface.base.clss.ContractEmployee;
 import main.Interface.base.clss.SalariedEmployee;
 
@@ -35,20 +34,25 @@ public class App {
 		Employee workers[] = new Employee[4];
 		
 		workers[0] = new SalariedEmployee("1","111", 100);
-		workers[1] = new SalariedEmployee("2","222", 200);
+		workers[1] = new SalariedEmployee("2","222", 20000);
 		workers[2] = new ContractEmployee("3","333", 50);
 		workers[3] = new ContractEmployee("4","444", 100);
 		
+		Employee tmp;
 		
-
+		for (int i = 0; i<workers.length-1; i++) {
+			for (int j = i+1; j<workers.length; j++) {
+				if (workers[i].calculatePay() >= workers[j].calculatePay()) {
+					tmp = workers[i];
+					workers[i] = workers[j];
+					workers[j] = tmp;
+				}
+			}
+		}
 		
 		for (int i = 0; i<workers.length; i++) {
 			System.out.println("----------------");
-			if (workers[i] instanceof SalariedEmployee) {
-				((SalariedEmployee)workers[i]).print();
-			}else {
-				((ContractEmployee)workers[i]).print();
-			}
+			workers[i].print();
 		}
 	}
 
