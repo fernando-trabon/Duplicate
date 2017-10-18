@@ -35,8 +35,5 @@ public  abstract class Employee implements CalculatePay{
 	public enum Payment{
 		hourly, fixed
 	}
-	
-	public Employee() {};
-	
-	
+		
 }

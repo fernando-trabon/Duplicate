@@ -14,6 +14,7 @@ public class App {
 	public static void main(String[] args) {
 		
 		Bird birds[] = new Bird[4];
+		
 		birds[0] = new Eagle();
 		birds[1] = new Swallow();
 		birds[2] = new Penguin();
@@ -33,7 +34,7 @@ public class App {
 				
 		Employee workers[] = new Employee[4];
 		
-		workers[0] = new SalariedEmployee("1","111", 100);
+		workers[0] = new SalariedEmployee("1","111", 10000);
 		workers[1] = new SalariedEmployee("2","222", 20000);
 		workers[2] = new ContractEmployee("3","333", 50);
 		workers[3] = new ContractEmployee("4","444", 100);
