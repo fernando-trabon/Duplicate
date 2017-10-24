@@ -3,8 +3,6 @@ package practicaltask.practicaltask8.task3;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import homework.lesson4.Check;
-
 public class RegEx {
 	
 	public static boolean check(String name) {
