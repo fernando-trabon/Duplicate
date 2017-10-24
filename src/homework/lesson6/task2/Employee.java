@@ -1,12 +1,10 @@
 package homework.lesson6.task2;
 
-public class Employee {
+public abstract class Employee {
 	String employeeID;
 	String name;
 
-	public double calculatePay() {
-		return 0;
-	}
+	public abstract double calculatePay(); 
 
 	public Employee(String employeeID, String name) {
 		super();
