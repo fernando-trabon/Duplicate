@@ -7,18 +7,12 @@ import java.io.InputStreamReader;
 public class Even {
 
 	private static boolean EvenN(int number) {
-		if (number % 2 == 0) {
-			return true;
-		} else {
-			return false;
-		}
-
+		return number % 2 == 0;
 	}
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-	
 		System.out.println("Input integer number: ");
 		int dob = 1;
 		int tmp;
