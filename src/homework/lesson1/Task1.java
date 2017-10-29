@@ -13,11 +13,11 @@ public class Task1 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("Input circle radius:");
 		try {
-			double radius = Double.parseDouble(br.readLine());
+			double radius = Task3.checkNegative(Double.parseDouble(br.readLine()));
 			System.out.printf("Perimeter of flower bed is: " + "%.2f", (2 * Math.PI * radius));
 			String format = "%.2f";
 			System.out.printf("\nThe area of flower bad is: " + format, Math.PI * Math.pow(radius, 2));
-		} catch (NumberFormatException | IOException e) {
+		} catch (NumberFormatException | IOException | NegativeNumberException e) {
 			System.err.println(e);
 		} finally {
 			try {

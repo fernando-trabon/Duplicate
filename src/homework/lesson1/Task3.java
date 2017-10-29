@@ -8,14 +8,14 @@ import java.io.InputStreamReader;
 // Skrypets O
 
 public class Task3 {
+
 	public static double checkNegative(double number) throws NegativeNumberException {
 		if (number > 0) {
-			return number;	
+			return number;
 		} else {
 			throw new NegativeNumberException("You inputted negative number!");
 		}
-		
-		
+
 	}
 
 	public static void main(String[] args) {
@@ -34,11 +34,19 @@ public class Task3 {
 			time3 = checkNegative(Double.parseDouble(br.readLine()));
 		} catch (NumberFormatException | IOException | NegativeNumberException e) {
 			System.err.println(e);
+		} finally {
+			try {
+				br.close();
+			} catch (IOException e) {
+				System.err.println(e);
+			}
+			System.out.printf("The cost of first call: " + "%.2f", country1 * time1);
+			System.out.printf("\nThe cost of second call: " + "%.2f", country2 * time2);
+			System.out.printf("\nThe cost of third call: " + "%.2f", country3 * time3);
+			System.out.printf("\nThe cost of all calls: " + "%.2f",
+					country1 * time1 + country2 * time2 + country3 * time3);
 		}
-		System.out.printf("The cost of first call: " + "%.2f", country1 * time1);
-		System.out.printf("\nThe cost of second call: " + "%.2f", country2 * time2);
-		System.out.printf("\nThe cost of third call: " + "%.2f", country3 * time3);
-		System.out.printf("\nThe cost of all calls: " + "%.2f", country1 * time1 + country2 * time2 + country3 * time3);
+
 	}
 
 }
