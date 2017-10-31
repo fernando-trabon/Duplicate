@@ -1,0 +1,3 @@
+Lines in the fileC:\Users\Oleh\Desktop\file1.txt: 13
+Longest line of fileC:\Users\Oleh\Desktop\file1.txt: Others have also developed alternative implementations of these Sun technologies, such as the GNU Compiler for Java (bytecode compiler), GNU Classpath (standard libraries), and IcedTea-Web (browser plugin for applets).
+Oleksii Demidov, 24.11.1995
