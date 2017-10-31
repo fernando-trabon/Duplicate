@@ -14,73 +14,73 @@ import First.Threads.NewThread;
 public class Main_met {
 
 	public static void main(String[] args) {
-//		 NewThread t1 = new NewThread("Message1");
-//		 NewThread t2 = new NewThread("Message2");
-//		 NewThread t3 = new NewThread("Message3");
-//		
-//		 t1.start();
-//		 t2.start();
-//		
-//		 try {
-//		 t1.join();
-//		 t2.join();
-//		 } catch (InterruptedException e) {}
-//		
-//		 t3.run();
-//
-//		 Thread t4 = new Thread() {
-//		 public void run() {
-//		 synchronized (Main_met.class) {
-//		
-//		 while(true) {
-//		 System.out.println("Thread run");
-//		 System.exit(0);
-//		 }
-//		 }
-//		 }
-//		 };
-//		
-//		
-//		 t4.start();
-//		
-//		 if(t4.isAlive()) {
-//		 System.out.println("Thread starting");
-//		 }
-//		 try {
-//		 t4.join();
-//		 } catch (InterruptedException e) {
-//		
-//		 }
-//		 System.out.println("Last part");
-//		 
-//
-//		Thread one = new Thread() {
-//			public void run(){
-//				
-//				Thread two = new Thread() {
-//					public void run() {
-//						
-//						for (int i=0; i<3; i++) {
-//							System.out.println("Thread number two");
-//						}
-//						
-//						Thread three = new Thread() {
-//							public void run() {
-//								for (int i=0; i<5; i++) {
-//									System.out.println("Thread number three");
-//								}
-//							}
-//						};
-//						
-//						three.start();
-//					}
-//				};
-//				
-//				two.start();
-//			}
-//		};
-//		
-//		one.start();		
+		 NewThread t1 = new NewThread("Message1");
+		 NewThread t2 = new NewThread("Message2");
+		 NewThread t3 = new NewThread("Message3");
+		
+		 t1.start();
+		 t2.start();
+		
+		 try {
+		 t1.join();
+		 t2.join();
+		 } catch (InterruptedException e) {}
+		
+		 t3.run();
+
+		 Thread t4 = new Thread() {
+		 public void run() {
+		 synchronized (Main_met.class) {
+		
+		 while(true) {
+		 System.out.println("Thread run");
+		 System.exit(0);
+		 }
+		 }
+		 }
+		 };
+		
+		
+		 t4.start();
+		
+		 if(t4.isAlive()) {
+		 System.out.println("Thread starting");
+		 }
+		 try {
+		 t4.join();
+		 } catch (InterruptedException e) {
+		
+		 }
+		 System.out.println("Last part");
+		 
+
+		Thread one = new Thread() {
+			public void run(){
+				
+				Thread two = new Thread() {
+					public void run() {
+						
+						for (int i=0; i<3; i++) {
+							System.out.println("Thread number two");
+						}
+						
+						Thread three = new Thread() {
+							public void run() {
+								for (int i=0; i<5; i++) {
+									System.out.println("Thread number three");
+								}
+							}
+						};
+						
+						three.start();
+					}
+				};
+				
+				two.start();
+			}
+		};
+		
+		one.start();		
 		
 		BufferedReader sc = new BufferedReader(new InputStreamReader(System.in));
 		
