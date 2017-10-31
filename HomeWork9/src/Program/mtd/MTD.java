@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class MTD {
 
-	public double div(double a, double b) throws Exception{
+	public double div(double a, double b) throws ArithmeticException{
 		if (b == 0) {
 			throw new ArithmeticException("Division by zero");
 		}

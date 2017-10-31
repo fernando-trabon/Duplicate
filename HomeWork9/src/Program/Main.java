@@ -8,7 +8,7 @@ import Program.mtd.MTD;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args){
 		MTD m = new MTD();
 		BufferedReader sc = new BufferedReader(new InputStreamReader(System.in));
 		
@@ -26,7 +26,7 @@ public class Main {
 		
 		try{
 			System.out.println(m.div(a, b));
-		}catch (Exception e) {
+		}catch (ArithmeticException e) {
 			System.err.println(e);
 		}
 		
@@ -42,8 +42,8 @@ public class Main {
 				 i++;
 			}catch(ArithmeticException|IOException|NumberFormatException e) {
 				System.err.println(e);
-				continue;
 			}
+			continue;
 		}
 
 	}
