@@ -28,30 +28,41 @@ public class Main_met {
 		
 		 t3.run();
 
-		 Thread t4 = new Thread() {
-		 public void run() {
-		 synchronized (Main_met.class) {
-		
-		 while(true) {
-		 System.out.println("Thread run");
-		 System.exit(0);
-		 }
-		 }
-		 }
-		 };
-		
-		
-		 t4.start();
-		
-		 if(t4.isAlive()) {
-		 System.out.println("Thread starting");
-		 }
-		 try {
-		 t4.join();
-		 } catch (InterruptedException e) {
-		
-		 }
-		 System.out.println("Last part");
+//		final Integer a = new Integer(0);
+//		final Integer b = new Integer(0);
+//		
+//		Thread t4 = new Thread() {
+//			public void run() {
+//				synchronized (a) {
+//					System.out.println("Enter first thread");
+//					
+//					
+//
+//					System.out.println("Thread one running");
+//					synchronized (b) {
+//						System.out.println("Enter second stage");
+//					}
+//					
+//					
+//				}
+//			}
+//		};
+//		t4.start();
+//		
+//		synchronized(b) {
+//			try {
+//				Thread.sleep(100);
+//			}catch(InterruptedException e) {
+//				System.err.println(e);
+//			}
+//			Thread.yield();
+//			synchronized (a) {
+//				System.out.println("Third stage");
+//			}
+//		}
+//		
+//		
+//		System.out.println("After deadlock");
 		 
 
 		Thread one = new Thread() {
